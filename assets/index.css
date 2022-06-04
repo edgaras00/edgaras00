@@ -1,0 +1,483 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+i:hover {
+  opacity: 0.7;
+}
+
+body {
+  font-family: Quicksand, sans-serif;
+}
+
+footer {
+  background-color: #b3b3b3;
+  font-size: 20px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links {
+  width: 15%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-links a {
+  color: #fff;
+}
+
+/* Version 1 */
+.banner {
+  height: 90vh;
+  width: 100%;
+  color: #fff;
+  background-color: #4686a0;
+  background-image: url("overlay2.png"), url("overlay3.svg"),
+    linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
+  background-size: auto, cover, cover;
+}
+
+/* Version 2 */
+/* .banner {
+  height: 90vh;
+  background-image: linear-gradient(
+      to top,
+      rgba(46, 49, 65, 0.8),
+      rgba(46, 49, 65, 0.8)
+    ),
+    url("bg.jpg");
+  background-size: auto, cover;
+  background-position: center, center;
+} */
+
+.navbar {
+  width: 100%;
+  height: 15%;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar-links ul {
+  list-style: none;
+}
+
+.navbar-links {
+  margin-right: 1.2rem;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem;
+  display: block;
+}
+
+.navbar-links li a:hover {
+  opacity: 0.8;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 1.2rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.banner-content {
+  /* height: 84%; */
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-text {
+  width: 80%;
+  color: #fff;
+  margin-bottom: 5rem;
+}
+
+.banner-text h1 {
+  font-size: 2.6rem;
+  border-bottom: 4px solid rgba(255, 255, 255, 0.125);
+  padding-bottom: 0.8rem;
+  margin-bottom: 1.3rem;
+  letter-spacing: 2px;
+}
+
+.banner-text h2 {
+  margin-bottom: 60px;
+  letter-spacing: 1px;
+}
+
+.centered {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.centered img {
+  width: 100px;
+  margin-bottom: 30px;
+}
+
+#banner-button {
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1.15rem;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#banner-button:hover {
+  opacity: 0.85;
+}
+
+#about {
+  background-color: #fff;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  padding-bottom: 3rem;
+  padding-top: 4rem;
+}
+
+#about h2,
+#skills h2 {
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+}
+
+#about h2 {
+  margin-bottom: 2.5rem;
+}
+
+#about p {
+  width: 50%;
+  line-height: 1.5rem;
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+}
+
+#skills {
+  padding-top: 3rem;
+  color: #555;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.skills-inner {
+  width: 80%;
+  background-color: rgb(250, 250, 250);
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.skill-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  row-gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.grid-item {
+  text-align: center;
+}
+
+.grid-item img {
+  width: 130px;
+  margin-bottom: 10px;
+}
+
+#projects {
+  display: flex;
+  justify-content: center;
+  color: #555;
+}
+
+.projects-inner {
+  width: 80%;
+  background-color: rgb(250, 250, 250);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+.projects-inner h2 {
+  margin-bottom: 2rem;
+}
+
+.project-category-wrapper {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2.1rem;
+  color: #000;
+  font-size: 1.05rem;
+}
+
+.project-category-wrapper span {
+  cursor: pointer;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  row-gap: 3rem;
+}
+
+.bioinformatics-projects {
+  width: 84%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.first-row {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.first-bio-project {
+  margin-right: 3rem;
+}
+
+#webdev-select,
+#bio-select {
+  font-weight: 800;
+}
+
+.selected {
+  color: #4361c2;
+}
+
+#webdev-select:hover,
+#bio-select:hover {
+  opacity: 0.8;
+}
+
+.selected:hover {
+  color: #4361c2;
+}
+
+/* .bioinformatics-projects {
+  column-gap: 3rem;
+} */
+
+.hidden {
+  display: none;
+}
+
+.project-card {
+  width: 86%;
+  color: rgb(14, 14, 14);
+  height: 470px;
+}
+
+.bio-project-card {
+  /* width: 76%; */
+  width: 320px;
+  color: rgb(14, 14, 14);
+  padding: 0.9rem 2.2rem;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(245, 244, 244);
+}
+
+.bio-project-card a {
+  text-decoration: none;
+}
+
+.bio-project-card h2 {
+  color: #000;
+}
+
+.bio-project-card a:hover {
+  opacity: 0.5;
+}
+
+.project-image-container {
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+}
+
+.project-image-container img {
+  width: 100%;
+}
+
+.project-image-container img:hover {
+  opacity: 0.8;
+}
+
+.project-description {
+  margin-bottom: 10px;
+  height: 110px;
+}
+
+.description-text {
+  height: 80px;
+}
+
+.built-with {
+  height: 20px;
+}
+
+.link {
+  font-weight: 600;
+  color: #4361c2;
+  text-decoration: none;
+}
+
+.link:hover {
+  opacity: 0.8;
+}
+
+.first-link {
+  margin-right: 3rem;
+}
+
+@media (max-width: 800px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .banner {
+    height: 100vh;
+    margin-bottom: 10rem;
+  }
+
+  .banner-text {
+    width: 80%;
+    text-align: center;
+  }
+
+  #about p {
+    width: 80%;
+  }
+
+  .skill-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .project-category-wrapper {
+    width: 80%;
+  }
+
+  .project-description {
+    height: 130px;
+  }
+
+  .project-image-container {
+    /* height: 200px; */
+  }
+
+  .social-links {
+    width: 60%;
+  }
+
+  .bioinformatics-projects {
+    width: 96%;
+    width: 100%;
+  }
+
+  .first-row {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .bio-project-card {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    background-color: rgb(250, 250, 250);
+  }
+
+  .first-bio-project {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+
+  .bio-project-card h2 {
+    font-size: 1.5rem;
+  }
+}

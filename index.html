@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./assets/index.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
+    <title>EB</title>
+  </head>
+  <body>
+    <!-- <nav class="navbar">
+      <a class="nav-logo" href="#">
+        <h2>EB</h2>
+      </a>
+      <a class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav> -->
+    <section class="banner">
+      <nav class="navbar">
+        <a class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="banner-content">
+        <div class="banner-text centered">
+          <img src="code.png" alt="code" />
+          <h1 id="name">Edgaras Bezrucenkovas</h1>
+          <h2>Web Developer</h2>
+          <a id="banner-button" href="#about"> WELCOME </a>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <h2>ABOUT ME</h2>
+      <p>
+        I am a full stack web developer and bioinformatician based in New York
+        City. I am a passionate programmer who likes to web applications and
+        solve challenging problems using code.
+      </p>
+      <p>
+        I've been working as a bioinformatician at Hunter College where I used
+        programming to explore various biological problems such as using machine
+        learning algorithms to help develop new vaccine designs for Lyme disease
+        and assisting in creating tools for tracing COVID-19 mutations. There I
+        also had the chance to try out web development which I started to really
+        enjoy.
+      </p>
+      <p>
+        I am always eager to learn new things and work on challenging problems.
+      </p>
+    </section>
+
+    <section id="skills">
+      <div class="skills-inner">
+        <h2>SKILLS</h2>
+        <div class="skill-grid">
+          <div class="grid-item">
+            <img src="js.svg" alt="javascript" />
+            <h3>JavaScript</h3>
+          </div>
+          <div class="grid-item">
+            <img src="python.svg" alt="python" />
+            <h3>Python</h3>
+          </div>
+          <div class="grid-item">
+            <img src="react.svg" alt="react" />
+            <h3>React</h3>
+          </div>
+          <div class="grid-item">
+            <img src="redux.svg" alt="redux" />
+            <h3>Redux</h3>
+          </div>
+          <div class="grid-item">
+            <img src="node.svg" alt="nodejs" />
+            <h3>nodeJS</h3>
+          </div>
+          <div class="grid-item">
+            <img src="mongodb.svg" alt="mongodb" />
+            <h3>mongoDB</h3>
+          </div>
+          <div class="grid-item">
+            <img src="psql.svg" alt="psql" />
+            <h3>PostgreSQL</h3>
+          </div>
+          <div class="grid-item">
+            <img src="html.svg" alt="html5" />
+            <h3>HTML5</h3>
+          </div>
+          <div class="grid-item">
+            <img src="css.svg" alt="css3" />
+            <h3>CSS3</h3>
+          </div>
+          <div class="grid-item hidden" id="last-grid-item">
+            <img src="aws.svg" alt="aws" />
+            <h3>AWS</h3>
+          </div>
+        </div>
+        <div class="grid-item" id="skill-second">
+          <img src="aws.svg" alt="aws" />
+          <h3>AWS</h3>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="projects-inner">
+        <h2>PROJECTS</h2>
+        <div class="project-category-wrapper">
+          <span id="webdev-select" class="selected">Web Development</span>
+          <span id="bio-select">Bioinformatics</span>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image-container">
+              <a
+                href="https://github.com/edgaras00/asset-tracker"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="assets/asset-tracker.png" alt="paradise travel"
+              /></a>
+            </div>
+            <h2>ALPHA</h2>
+            <div class="project-description">
+              <p class="description-text">
+                A fullstack web application to track stock and crypto
+                investments. Inspired by other asset trackers like Delta and
+                Blockfolio.
+              </p>
+              <p class="built-with">
+                Built with React, nodeJS/Express, and mongoDB/Mongoose.
+              </p>
+            </div>
+            <div>
+              <a
+                class="link first-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Website</a
+              >
+              <a
+                class="link"
+                href="https://github.com/edgaras00/asset-tracker"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Source</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image-container">
+              <a
+                href="https://github.com/edgaras00/asset-tracker"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="assets/travel.png" alt="paradise travel"
+              /></a>
+            </div>
+            <h2>PARADISE TRAVEL</h2>
+            <div class="project-description">
+              <p class="description-text">
+                Paradise Travel is a fullstack web application for a fictional
+                travel agency.
+              </p>
+              <p class="built-with">
+                Built with React, nodeJS/Express, and mongoDB/mongoose.
+              </p>
+            </div>
+            <div>
+              <a
+                class="link first-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Website</a
+              >
+              <a
+                class="link"
+                href="https://github.com/edgaras00/asset-tracker"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Source</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image-container">
+              <a
+                href="https://github.com/edgaras00/media-collage"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="assets/media.png" alt="media charts"
+              /></a>
+            </div>
+            <h2>MEDIA CHARTS</h2>
+            <div class="project-description">
+              <p class="description-text">
+                Front end application for customizable media (music, movies,
+                anime, video games) artwork chart creation.
+              </p>
+              <p class="built-with">Built with React</p>
+            </div>
+            <div>
+              <a
+                class="link first-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Website</a
+              >
+              <a
+                class="link"
+                href="https://github.com/edgaras00/media-collage"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Source</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image-container">
+              <a
+                href="https://github.com/edgaras00/weather-app"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="assets/weather.png" alt="weather app"
+              /></a>
+            </div>
+            <h2>WEATHER</h2>
+            <div class="project-description">
+              <p class="description-text">
+                Front end application that shows weather forecast.
+              </p>
+              <p class="built-with">Built with React</p>
+            </div>
+            <div>
+              <a
+                class="link first-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Website</a
+              >
+              <a
+                class="link"
+                href="https://github.com/edgaras00/weather-app"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Source</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image-container">
+              <a
+                href="https://github.com/edgaras00/landing-page"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="assets/codewiz.png" alt="codewiz"
+              /></a>
+            </div>
+            <h2>CodeWiz</h2>
+            <div class="project-description">
+              <p class="description-text">
+                Landing page for a fictional coding school.
+              </p>
+              <p class="built-with">Built with HTML, CSS, JavaScript</p>
+            </div>
+            <div>
+              <a
+                class="link first-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Website</a
+              >
+              <a
+                class="link"
+                href="https://github.com/edgaras00/landing-page"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Source</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image-container">
+              <a
+                href="https://github.com/edgaras00/drum-machine"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="assets/drum.png" alt="drum machine"
+              /></a>
+            </div>
+            <h2>Drum Machine</h2>
+            <div class="project-description">
+              <p class="description-text">Drum machine web application.</p>
+              <p class="built-with">Built with React</p>
+            </div>
+            <div>
+              <a
+                class="link first-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Website</a
+              >
+              <a
+                class="link"
+                href="https://github.com/edgaras00/drum-machine"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Source</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="bioinformatics-projects hidden">
+          <div class="first-row">
+            <div class="bio-project-card first-bio-project">
+              <a
+                href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8376116/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><h2>
+                  Maximum antigen diversification in a lyme bacterial population
+                  and evolutionary strategies to overcome pathogen diversity
+                </h2></a
+              >
+              <div>
+                <a
+                  class="link first-link"
+                  href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8376116/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Article</a
+                >
+                <a
+                  class="link"
+                  href="https://github.com/weigangq/ag-div"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="bio-project-card">
+              <a
+                href="https://www.biorxiv.org/content/10.1101/2021.05.07.443114v1.article-info"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><h2>
+                  Following the Trail of One Million Genomes: Footprints of
+                  SARS-CoV-2 Adaptation to Humans
+                </h2></a
+              >
+              <div>
+                <a
+                  class="link first-link"
+                  href="https://www.biorxiv.org/content/10.1101/2021.05.07.443114v1.article-info"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Article</a
+                >
+                <a
+                  class="link"
+                  href="https://github.com/weigangq/cov-db"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="bio-project-card">
+            <a
+              href="https://www.biorxiv.org/content/10.1101/2020.04.10.036343v1"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><h2>
+                CoV Genome Tracker: tracing genomic footprints of Covid-19
+                pandemic
+              </h2></a
+            >
+            <div>
+              <a
+                class="link first-link"
+                href="https://www.biorxiv.org/content/10.1101/2020.04.10.036343v1"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Article</a
+              >
+              <a
+                class="link"
+                href="https://github.com/weigangq/cov-browser"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="contact">
+      <div class="social-links">
+        <a href="#">
+          <i class="fab fa-linkedin-in fa-2x"></i>
+        </a>
+        <a
+          href="https://github.com/edgaras00"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+        <a href="mailto:edgaras993@gmail.com">
+          <i class="far fa-envelope fa-2x"></i>
+        </a>
+      </div>
+    </footer>
+  </body>
+  <script src="index.js"></script>
+</html>
