@@ -179,6 +179,17 @@ footer {
   padding-top: 4rem;
 }
 
+#about a {
+  text-decoration: none;
+  color: #4361c2;
+  font-weight: 600;
+  transition: color 1s linear;
+}
+
+#about a:hover {
+  color: #4fa49a;
+}
+
 #about h2,
 #skills h2 {
   font-weight: 500;
@@ -269,6 +280,7 @@ footer {
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   row-gap: 3rem;
+  animation: fadein 1s ease-in;
 }
 
 .bioinformatics-projects {
@@ -276,6 +288,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: fadein 1s ease-in;
 }
 
 .first-row {
@@ -325,7 +338,7 @@ footer {
   /* width: 76%; */
   width: 320px;
   color: rgb(14, 14, 14);
-  padding: 0.9rem 2.2rem;
+  padding: 1.2rem 2.2rem;
   height: 200px;
   display: flex;
   justify-content: center;
@@ -384,6 +397,15 @@ footer {
 
 .first-link {
   margin-right: 3rem;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 800px) {
@@ -451,9 +473,9 @@ footer {
     height: 130px;
   }
 
-  .project-image-container {
-    /* height: 200px; */
-  }
+  /* .project-image-container {
+    height: 200px;
+  } */
 
   .social-links {
     width: 60%;
