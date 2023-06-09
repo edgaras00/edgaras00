@@ -368,6 +368,10 @@ footer {
   width: 100%;
 }
 
+.codewiz {
+  height: 100%;
+}
+
 .project-image-container img:hover {
   opacity: 0.8;
 }
