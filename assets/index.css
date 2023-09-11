@@ -511,4 +511,9 @@ footer {
   .bio-project-card h2 {
     font-size: 1.5rem;
   }
+
+  .project-category-wrapper {
+    width: 80%;
+    font-size: 0.9rem;
+  }
 }
