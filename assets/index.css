@@ -184,7 +184,7 @@ footer {
   align-items: center;
   justify-content: center;
   color: #ccc;
-  margin-top: 3.5rem;
+  /* margin-top: 0rem; */
   /* padding-bottom: 2rem; */
   /* padding-top: 4rem; */
 }
@@ -260,8 +260,6 @@ footer {
   color: #555;
   color: #ccc;
   background: #0f172a;
-
-  margin-top: ;
 }
 
 .projects-inner {
