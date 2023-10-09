@@ -48,19 +48,3 @@ window.addEventListener("resize", () => {
     skillSecond.classList.remove("hidden");
   }
 });
-
-function Student() {}
-
-Student.prototype.sayName = function () {
-  console.log(this.name);
-};
-
-function Firstgrader(name) {
-  this.name = name;
-  this.grade = 8;
-}
-
-Firstgrader.prototype = Object.create(Student.prototype);
-
-const s1 = new Firstgrader("Steve");
-s1.sayName();
