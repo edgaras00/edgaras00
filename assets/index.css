@@ -487,6 +487,7 @@ footer {
 
   #about p {
     width: 80%;
+    text-align: center;
   }
 
   /* .skill-grid {
@@ -505,9 +506,9 @@ footer {
     height: 130px;
   }
 
-  /* .project-image-container {
-    height: 200px;
-  } */
+  .project-image-container {
+    height: 180px;
+  }
 
   .social-links {
     width: 60%;
