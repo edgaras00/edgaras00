@@ -33,18 +33,18 @@ const selectWebProject = document.getElementById("webdev-select");
 const selectBioProject = document.getElementById("bio-select");
 const webProjectsGrid = document.querySelector(".projects-grid");
 const bioProjectsGrid = document.querySelector(".bioinformatics-projects");
-const skillSecond = document.getElementById("skill-second");
-const lastGridItem = document.getElementById("last-grid-item");
+// const skillSecond = document.getElementById("skill-second");
+// const lastGridItem = document.getElementById("last-grid-item");
 
 selectWebProject.addEventListener("click", selectWebdevProject);
 selectBioProject.addEventListener("click", selectBioinfoProject);
 
 window.addEventListener("resize", () => {
   if (window.innerWidth <= 800) {
-    lastGridItem.classList.remove("hidden");
-    skillSecond.classList.add("hidden");
+    // lastGridItem.classList.remove("hidden");
+    // skillSecond.classList.add("hidden");
   } else {
-    lastGridItem.classList.add("hidden");
-    skillSecond.classList.remove("hidden");
+    // lastGridItem.classList.add("hidden");
+    // skillSecond.classList.remove("hidden");
   }
 });
