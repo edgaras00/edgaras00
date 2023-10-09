@@ -38,7 +38,7 @@ footer {
 
 /* Version 1 */
 .banner {
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   color: #fff;
   /* background-color: #4686a0;
@@ -47,7 +47,6 @@ footer {
   background-size: auto, cover, cover; */
 
   background: #0f172a;
-  /* background: linear-gradient(to bottom, #0f172a, #000000); */
 }
 
 /* Version 2 */
@@ -178,14 +177,16 @@ footer {
 #about {
   /* background-color: #fff; */
   background: #0f172a;
-  height: 320px;
+  /* height: 320px; */
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: #ccc;
-  padding-bottom: 3rem;
-  padding-top: 4rem;
+  margin-top: 3.5rem;
+  /* padding-bottom: 2rem; */
+  /* padding-top: 4rem; */
 }
 
 #about a {
@@ -200,7 +201,8 @@ footer {
 }
 
 #about h2,
-#skills h2 {
+#skills h2,
+#project-heading {
   font-weight: 500;
   letter-spacing: 1px;
   margin-bottom: 3rem;
@@ -258,6 +260,8 @@ footer {
   color: #555;
   color: #ccc;
   background: #0f172a;
+
+  margin-top: ;
 }
 
 .projects-inner {
