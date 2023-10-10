@@ -566,27 +566,6 @@ footer {
     width: 60%;
   }
 
-  .bioinformatics-projects {
-    width: 100%;
-  }
-
-  .first-row {
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .bio-project-card {
-    width: 100%;
-    padding: 0;
-    text-align: center;
-    /* background-color: rgb(250, 250, 250); */
-  }
-
-  .first-bio-project {
-    margin-right: 0;
-    margin-bottom: 3rem;
-  }
-
   .bio-project-card h2 {
     font-size: 1.5rem;
   }
