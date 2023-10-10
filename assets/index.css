@@ -336,10 +336,6 @@ footer {
   color: #4361c2;
 }
 
-/* .bioinformatics-projects {
-  column-gap: 3rem;
-} */
-
 .hidden {
   display: none;
 }
@@ -470,6 +466,26 @@ footer {
     height: 190px;
   }
 
+  .bioinformatics-projects {
+    width: 100%;
+  }
+
+  .first-row {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .bio-project-card {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .first-bio-project {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+
   .social-links {
     width: 40%;
   }
@@ -551,7 +567,6 @@ footer {
   }
 
   .bioinformatics-projects {
-    width: 96%;
     width: 100%;
   }
 
